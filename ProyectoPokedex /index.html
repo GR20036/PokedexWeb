@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex con API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/actualizado/img/favicon-32x32.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<header>
+  <h1>POKEDEX</h1>
+  <nav class="nav">
+   
+    <ul class="nav-list">
+        <li class="nav-item"><button class="btn btn-header" id="ver-todos">Ver todos</button></li> 
+        <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
+        <li class="nav-item"><button class="btn btn-header fire" id="fire">Fuego</button></li>
+        <li class="nav-item"><button class="btn btn-header water" id="water">Agua</button></li>
+        <li class="nav-item"><button class="btn btn-header grass" id="grass">Planta</button></li>
+        <li class="nav-item"><button class="btn btn-header electric" id="electric">Eléctrico</button></li>
+        <li class="nav-item"><button class="btn btn-header ice" id="ice">Hielo</button></li>
+        <li class="nav-item"><button class="btn btn-header fighting" id="fighting">Lucha</button></li>
+        <li class="nav-item"><button class="btn btn-header poison" id="poison">Veneno</button></li>
+        <li class="nav-item"><button class="btn btn-header ground" id="ground">Tierra</button></li>
+        <li class="nav-item"><button class="btn btn-header flying" id="flying">Volador</button></li>
+        <li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psíquico</button></li>
+        <li class="nav-item"><button class="btn btn-header bug" id="bug">Bicho</button></li>
+        <li class="nav-item"><button class="btn btn-header rock" id="rock">Roca</button></li>
+        <li class="nav-item"><button class="btn btn-header ghost" id="ghost">Fantasma</button></li>
+        <li class="nav-item"><button class="btn btn-header dark" id="dark">Siniestro</button></li>
+        <li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
+        <li class="nav-item"><button class="btn btn-header steel" id="steel">Acero</button></li>
+        <li class="nav-item"><button class="btn btn-header fairy" id="fairy">Hada</button></li>
+    </ul>
+</nav>
+</header>
+<body>
+    
+<div class='container'>
+  <ul id="listaUL">
+    <!--
+    <li class="itemPok" id="NP1">
+      <a class='normal card__inner [ js-expander ]' >
+        <svg viewBox='0 0 80 76' x='0px' y='0px'>
+          <img class="Sprites" id="Sprite1">
+        </svg>
+      </a>
+      <div class='info'>
+          <h3 id="Poke1"></h3>
+          <p id="Desc1"></p>
+      </div>
+      <div class="card__expander">
+        <i class="fa fa-close [ js-collapser ]"></i>
+        Expander
+      </div>
+    </li> 
+  -->
+  </ul>
+</div>
+<div class="contenedor_tarjeta tarjeta_inactive" id="contenedor_tarjeta">
+  <i class="fa fa-close [ js-collapser ]"></i>
+  <h1 class="tarjeta_title" id="tarjeta_title"></h1>
+  <img class="tarjeta_img" id="tarjeta_img">
+  <figure class="tabBlock">
+    <ul class="tabBlock-tabs">
+      <li class="tabBlock-tab is-active">About</li>
+      <li class="tabBlock-tab">Base Stats</li>
+      <li class="tabBlock-tab">Moves</li>
+    </ul>
+    <div class="tabBlock-content">
+      <div class="tabBlock-pane" id="tarjeta_info">
+        <p>Informacion General</p>
+      </div>
+      <div class="tabBlock-pane" id="estadisticas">
+        <p>Estadisticas base</p>
+      </div>
+      <div class="tabBlock-pane" id="moviendo">
+        <p>Movimientos</p>
+      </div>
+    </div>
+  </figure>
+</div>
+<script src="pokedex.js"></script>
+<script src="script_animacion.js"></script>
+<script src="script_tarjeta.js"></script>
+
+</body>
+</html>
